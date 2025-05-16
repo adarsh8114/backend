@@ -7,7 +7,7 @@ import feedparser
 from flask_cors import CORS
 
 app=Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "http://localhost:5173"}})
+CORS(app, resources={r"/api/*": {"origins": "http://localhost:5173","frontend-eosin-mu-95.vercel.app"}})
 
 RSS_FEED='https://feeds.bbci.co.uk/news/rss.xml'
 MAX_ARTICLES=50
